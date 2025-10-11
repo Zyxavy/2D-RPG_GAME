@@ -12,7 +12,6 @@ It includes exploration, battles, skills, inventory management, and multiple zon
 *  **Turn-Based Combat:** Engage in strategic battles against various enemies.
 *  **Skill System:** Utilize unique skills to gain an edge in combat.
 *  **Inventory Management:** Collect and manage items found on your journey.
-*  **Simple GUI:** A clean user interface powered by RayGUI.
 
 ##  Getting Started
 
@@ -85,10 +84,10 @@ This project is a work in progress. Here are some of the planned improvements:
 
 ## Acknowledgements
 
-* **raylib** by [Ramon Santamaria](https://github.com/raysan5) for the amazing game development library.
-* **raygui** by [Ramon Santamaria](https://github.com/raysan5) for the simple and immediate-mode GUI.
+* **raylib** by (https://github.com/raysan5) for the game development library.
+* **raygui** by (https://github.com/raysan5) for the simple GUI.
 
-##Credits
+## Credits
 
 A special thanks to the artist who provided the soundtrack for this game.
 
