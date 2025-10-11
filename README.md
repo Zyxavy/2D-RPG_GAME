@@ -1,65 +1,99 @@
-------------------
-Work In Progress
-------------------
-<br>
-<p>A 2d game I made using c++ with the raylib and raygui library. The code is a bit messy and unoptimized but it works, most of the time.</p>
-<p><em><b>Click on main.exe to play the game or press f5 when opened in vscode.</b></em></p>
-<br>
-<br>
-<h1>Music by Alkakrab
-<hr>
-<h3> 2025
-<br>
-Feb 23 - Added Menu | Fixed Battle UI
-<hr>
-Mar 4 - Added character selection| fixed some bugs| implemented entities
-<hr>
-Mar 11 - Added Barriers| imported more music.
-<hr>
-Mar 18 - Added more music| implemented MusicFunctions.cpp & hpp | implemented slider for audio adjustments.
-<hr>
-Mar 23 - Inventory Gui
-<hr>
-Mar 26 - Replaced Enemy struct with Enemy class | Added movement to the enemy, if player is within range the enemy will chase, else it will wander.
-<hr>
-Mar 30 - Added new Enemy | fixed some bugs
-<hr>
-Apr 8 - Replaced Hero struct with Hero class | fixed battle bug, Enemies are now stunned for a bit when escaping.
-<hr>
-Apr 13 - Added Health Potions | Added Sound Fx when hovering over items/status in inventory.
-<hr>
-Apr 17 - Added multiple instances of Enemies | Level Up screen 
-<hr>
-Apr 22 - Finished Level Up Screen | added Level up Sound Fx
-<hr>
-May 3 - Fixed some bugs on battle UI | added animations for battle -buggy as hek-
-<hr>
-May 6 - You can now access the inventory in battle | added health in battle | Skills -WIP-
-<hr>
-May 11 - Added Hero skills -WIP-
-<hr>
-May 14 - Optimized hero skills | added Status effects
-<hr>
-May 15 - Fixed Bugs during battle | added buffs for player 
-<hr>
-Jun 4 - Added Rogue SoundFx | added energy foods | fixed some Inventory bugs | adjusted the damage of some skills
-<hr>
-Jun 10 - Trees are now obstacles | <strike>added an unstuck feature</strike> | more orcs in dungeon  
-<hr>
-Jun 13 - Added the ability to cut down trees
-<hr>
-Jun 21 - Added a tutorial Book
-<hr>
-June 25 - Added more Enemies(a tree, a ghost, a crab, and a statue)
-<hr>
-June 30 - Added a new zone (Plains land) | adjusted enemy stats and scaling
-<hr>
-July 14 - Created a basic story line | added more enemies and bosses | created NPCs and their dialog | added custom maps | added Items and many more
-<hr>
-July 29 - Added 3 new zones & more enemies | added boats and sea traversal | 
-<hr>
-August 23 - added Sea Zone & Map| added new NPC in basement | added new enemies / boss | added islander merchant and shop | added new potions | Created last zone & Levels to it| Added a special Golem | added 2 more zones (almost finished)
-<hr>
-August 25 - Minor Changes to the ending
-<hr>
-September 1 - Finished the Game | Only a few bugs and some minor balancing remains
+# C++ 2D RPG Adventure 
+
+## 🕹️ About the Project
+
+This is a 2D RPG game developed in C++ using the [Raylib](https://www.raylib.com/) and [RayGUI](https://github.com/raysan5/raygui) libraries.
+
+It includes exploration, battles, skills, inventory management, and multiple zones. The code is functional but still a bit messy and unoptimized, improvements are planned for future updates.
+
+## ✨ Features
+
+*  **World Exploration:** Traverse through multiple distinct zones.
+*  **Turn-Based Combat:** Engage in strategic battles against various enemies.
+*  **Skill System:** Utilize unique skills to gain an edge in combat.
+*  **Inventory Management:** Collect and manage items found on your journey.
+*  **Simple GUI:** A clean user interface powered by RayGUI.
+
+##  Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+To build and run this project from the source, you'll need a C++ compiler and the Raylib library configured on your system.
+* A C++ compiler (e.g., MinGW-w64 on Windows, GCC on Linux)
+* [Visual Studio Code](https://code.visualstudio.com/) (recommended)
+* [Raylib Library](https://github.com/raysan5/raylib/releases)
+
+### How to Play
+
+There are two ways to run the game:
+
+**Option 1: Run the Executable**
+
+1.  Go to the game's main folder.
+2.  Double-click on `main.exe` to start the game.
+
+**Option 2: Build from Source in VS Code**
+
+1.  Clone the repository to your local machine:
+    ```sh
+    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    ```
+2.  Open the project folder in Visual Studio Code.
+3.  Ensure your VS Code tasks (`tasks.json`) are configured to compile and link against the Raylib library files.
+4.  Press `F5` to build and run the debug version.
+
+## Future Plans
+
+This project is a work in progress. Here are some of the planned improvements:
+- [ ] Code refactoring and optimization for better performance.
+- [ ] Bug fixing and general stability improvements.
+
+## Development Timeline
+
+| Date   | Update Summary                                                                           |
+|--------|------------------------------------------------------------------------------------------|
+| Feb 23 | Added Menu; Fixed Battle UI                                                              |
+| Mar 4  | Added Character Selection; Fixed Bugs; Implemented Entities                              |
+| Mar 11 | Added Barriers; Imported More Music                                                      |
+| Mar 18 | Added More Music; Implemented `MusicFunctions.cpp/hpp`; Added Volume Slider                |
+| Mar 23 | Added Inventory GUI                                                                      |
+| Mar 26 | Replaced Enemy `struct` with `class`; Added AI Movement (Chase/Wander)                     |
+| Mar 30 | Added New Enemy; Fixed Various Bugs                                                      |
+| Apr 8  | Replaced Hero `struct` with `class`; Fixed Battle Bug; Added Enemy Stun Mechanic           |
+| Apr 13 | Added Health Potions; Added Inventory Hover Sound Effects                                |
+| Apr 17 | Added Multiple Enemy Instances; Added Level-Up Screen                                    |
+| Apr 22 | Finished Level-Up Screen; Added Level-Up SFX                                             |
+| May 3  | Fixed Battle UI Bugs; Added (Buggy) Battle Animations                                    |
+| May 6  | Enabled Inventory Access in Battle; Added Health Display; Started Skill System (WIP)     |
+| May 11 | Added Hero Skills (WIP)                                                                  |
+| May 14 | Optimized Skills; Added Status Effects                                                   |
+| May 15 | Fixed Battle Bugs; Added Player Buffs                                                    |
+| Jun 4  | Added Rogue SFX; Added Energy Foods; Fixed Inventory Bugs; Adjusted Skill Damage         |
+| Jun 10 | Made Trees Obstacles; Added More Orcs in Dungeon                                         |
+| Jun 13 | Added Tree-Cutting Mechanic                                                              |
+| Jun 21 | Added Tutorial Book                                                                      |
+| Jun 25 | Added New Enemies (Tree, Ghost, Crab, Statue)                                            |
+| Jun 30 | Added New Zone (Plains Land); Adjusted Enemy Scaling                                     |
+| Jul 14 | Created Basic Storyline; Added NPCs, Dialog, Custom Maps, Items, and More Enemies/Bosses |
+| Jul 29 | Added 3 New Zones; Added Boats and Sea Traversal                                         |
+| Aug 23 | Added Sea Zone & Map; New NPCs, Enemies, Boss, Merchant, Potions, and Final Zones        |
+| Aug 25 | Minor Ending Adjustments                                                                 |
+| Sep 1  | 🎉 Finished the Game! (Minor bugs and balance issues remain)                             |
+
+
+## Acknowledgements
+
+* **raylib** by [Ramon Santamaria](https://github.com/raysan5) for the amazing game development library.
+* **raygui** by [Ramon Santamaria](https://github.com/raysan5) for the simple and immediate-mode GUI.
+
+##Credits
+
+A special thanks to the artist who provided the soundtrack for this game.
+
+* **Music by:** Alkakrab
+
+
+
+---

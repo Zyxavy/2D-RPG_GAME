@@ -20,6 +20,8 @@ bool playerLeveledUp = false;
 bool chestIsPresent = false;
 
 
+//NEEDS MAJOR OPTIMIZATION!!!
+
 //Init enemies
 Enemy orc(
     Enemy::ORC, "Orc", // id, name
@@ -139,7 +141,7 @@ Enemy specialGolem(
 Hero Knight (
     "Knight", "Strength", //Name, type
     TILE_WIDTH * 3, TILE_HEIGHT * 3, // pos X, pos Y
-    200, 200, 100, 100, 200, 300 /*to be fixed*/, 24, 0, 1, 1000, ZONE_WORLD, true, true // hp, maxhp, energy, maxenergy, damagemin,damagemax,defense, experience, level, money, zone, is alive, is passable
+    200, 200, 100, 100, 25, 45, 30, 0, 1, 1000, ZONE_WORLD, true, true // hp, maxhp, energy, maxenergy, damagemin,damagemax,defense, experience, level, money, zone, is alive, is passable
 );
 
 Hero Wizard (
