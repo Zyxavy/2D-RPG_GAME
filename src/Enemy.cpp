@@ -5,9 +5,9 @@
 #include <string>
 #include <cmath>
 
-Enemy::Enemy(int id, std::string name, int x, int y, int health, eZones zone, int damageMin, int damageMax, 
+Enemy::Enemy(int id, std::string name, int x, int y, int health, int maxHealth, eZones zone, int damageMin, int damageMax, 
     int defense, int experience, int level, std::string weakness, bool isSpecial, int moneyMin, int moneyMax)
-    : id(id), name(name), x(x), y(y), health(health), maxHealth(health), zone(zone),
+    : id(id), name(name), x(x), y(y), health(health), maxHealth(maxHealth), zone(zone),
       damageMin(damageMin), damageMax(damageMax), defense(defense), experience(experience), 
       level(level), isAlive(true), weakness(weakness), isSpecial(isSpecial), moneyMin(moneyMin), moneyMax(moneyMax), stunned(false), stunCounter(0) {}
 

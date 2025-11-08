@@ -42,6 +42,7 @@ GameState currentGameState;
 GameState prevGameState;
 bool isRidingBoat = false; 
 bool isBoatFacingRight = true; 
+
 void GameStartup() {
 
 

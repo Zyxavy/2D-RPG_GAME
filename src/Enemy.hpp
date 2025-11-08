@@ -24,7 +24,7 @@ private:
     
 public:
     // Constructor
-    Enemy(int id, std::string name, int x, int y, int health, eZones zone, int damageMin, int damageMax, int defense, 
+    Enemy(int id, std::string name, int x, int y, int health, int maxHealth, eZones zone, int damageMin, int damageMax, int defense, 
         int experience, int level, std::string weakness, bool isSpecial, int moneyMin, int moneyMax);
 
     // Getters

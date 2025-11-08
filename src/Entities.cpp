@@ -26,77 +26,77 @@ bool chestIsPresent = false;
 Enemy orc(
     Enemy::ORC, "Orc", // id, name
     TILE_WIDTH * 5, TILE_HEIGHT * 5, //spawn pos
-    200, ZONE_WORLD_PLAIN_LANDS, 40, 60, 20, //maxhp, zone, dmgMin, dmgMax, def
+    200, 200, ZONE_WORLD_PLAIN_LANDS, 40, 60, 20, //minhp, maxhp, zone, dmgMin, dmgMax, def
     180, 3, "Intelligence", false, 200, 700 // exp, level, weakness, special Status, moneyMin, moneyMax
 );
 
 Enemy wanderingEye(
     Enemy::WANDERING_EYE, "Wandering Eye",
     TILE_WIDTH * 10, TILE_HEIGHT * 20,
-    240, ZONE_WORLD_PLAIN_LANDS, 50, 70, 12,
+    240, 240, ZONE_WORLD_PLAIN_LANDS, 50, 70, 12,
     215, 3, "Strenght", false , 300, 850
 );
 
 Enemy treant(
     Enemy::TREANT, "Treant",
     TILE_WIDTH * 5, TILE_HEIGHT * 8,
-    190, ZONE_WORLD, 10, 80, 11,
+    190, 190, ZONE_WORLD, 10, 80, 11,
     180, 3, "Dexterity", false, 150, 300
 );
 
 Enemy vengefulSpirit(
     Enemy::VENGEFUL_SPIRIT, "Vengeful Spirit",
     TILE_WIDTH * 1, TILE_HEIGHT * 1,
-    100, ZONE_DUNGEON, 45, 50, 8,
+    100, 100, ZONE_DUNGEON, 45, 50, 8,
     160, 2, "Intelligence", false, 450, 550
 );
 
 Enemy golem(
     Enemy::GOLEM, "Golem",
     TILE_WIDTH * 2, TILE_HEIGHT * 2,
-    250, ZONE_DUNGEON, 18, 28, 25,
+    250, 250, ZONE_DUNGEON, 18, 28, 25,
     200, 4, "Strenght", false, 350, 600
 );
 
 Enemy snake(
     Enemy::SNAKE, "Snake",
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    100, ZONE_WORLD, 25, 45, 10,
+    100, 100, ZONE_WORLD, 25, 45, 10,
     125, 1, "Strenght", false, 200, 400
 );
 
 Enemy dog(
     Enemy::DOG, "Dog",
     TILE_WIDTH * 3, TILE_HEIGHT * 4,
-    190, ZONE_BASEMENT_DUNGEON, 70, 90, 19,
+    190, 190, ZONE_BASEMENT_DUNGEON, 70, 90, 19,
     260, 5, "Dexterity", false, 500, 1000
 );
 
 Enemy rat(
     Enemy::RAT, "Rat",
     TILE_WIDTH * 3, TILE_HEIGHT * 5,
-    80, ZONE_DUNGEON, 25, 45, 8,
+    80, 80, ZONE_DUNGEON, 25, 45, 8,
     120, 2, "Intelligence", false, 280, 670
 );
 
 Enemy slime(
     Enemy::SLIME, "Slime",
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    240, ZONE_BASEMENT_DUNGEON, 54, 83, 20,
+    240, 240, ZONE_BASEMENT_DUNGEON, 54, 83, 20,
     230, 4, "Intelligence", false, 700, 1200
 );
 
 Enemy floatingCrab(
     Enemy::FLOATING_CRAB, "Floating Crab",
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    300, ZONE_ISLAND, 68, 101, 25,
+    300, 300, ZONE_ISLAND, 68, 101, 25,
     300, 5, "Dexterity", false, 800, 1400
 );
 
 Enemy waterSlime(
     Enemy::WATER_SLIME, "Water Slime",
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    450, ZONE_SEA, 48, 90, 30,
+    450, 450, ZONE_SEA, 48, 90, 30,
     400, 6, "Intelligence", false, 1000, 2000
 );
 
@@ -104,35 +104,35 @@ Enemy waterSlime(
 Enemy crabThing(
     Enemy::CRAB_THING, "The Crab Thing",
     TILE_WIDTH * 1, TILE_HEIGHT * 5,
-    150, ZONE_WORLD, 30, 50, 15,
+    150, 150, ZONE_WORLD, 30, 50, 15,
     240, 6, "NULL", true, 1800, 2000
 );
 
 Enemy monsterSquid(
     Enemy::MONSTER_SQUID, "The Great Monster Squid",
     TILE_WIDTH * 2, TILE_HEIGHT * 5,
-    550, ZONE_SEA, 78, 100, 35,
+    550, 550, ZONE_SEA, 78, 100, 35,
     550, 7, "NULL", true, 4500, 5000
 );
 
 Enemy mutatedFrog(
     Enemy::MUTATED_FROG, "The Mutant Frog | 0-02",
     TILE_WIDTH * 2, TILE_HEIGHT * 5,
-    300, ZONE_WORLD_PLAIN_LANDS, 50, 90, 30,
+    300, 300, ZONE_WORLD_PLAIN_LANDS, 50, 90, 30,
     510, 8, "NULL", true, 3500, 4000
 );
 
 Enemy guardian(
     Enemy::GAURDIAN, "The Guardian",
     TILE_WIDTH * 2, TILE_HEIGHT * 5,
-    1000, ZONE_WORLD_PLAIN_LANDS, 10, 400, 45,
+    1000, 1000, ZONE_WORLD_PLAIN_LANDS, 10, 400, 45,
     999, 100, "NULL", true, 9000, 10000
 );
 
 Enemy specialGolem(
     Enemy::SPECIAL_GOLEM, "Golem Knight",
     TILE_WIDTH * 2, TILE_HEIGHT * 5,
-    300, ZONE_LOST_TEMPLE_LEVEL1, 100, 150, 55,
+    300, 300, ZONE_LOST_TEMPLE_LEVEL1, 100, 150, 55,
     790, 14, "NULL", true, 4000, 5000
 );
 
@@ -141,19 +141,19 @@ Enemy specialGolem(
 Hero Knight (
     "Knight", "Strength", //Name, type
     TILE_WIDTH * 3, TILE_HEIGHT * 3, // pos X, pos Y
-    200, 200, 100, 100, 25, 45, 30, 0, 1, 1000, ZONE_WORLD, true, true // hp, maxhp, energy, maxenergy, damagemin,damagemax,defense, experience, level, money, zone, is alive, is passable
+    220, 220, 100, 100, 27, 45, 30, 0, 1, 1000, ZONE_WORLD, true, true // hp, maxhp, energy, maxenergy, damagemin,damagemax,defense, experience, level, money, zone, is alive, is passable
 );
 
 Hero Wizard (
     "Wizard", "Intelligence", 
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    100, 100, 200, 200, 45, 55, 12, 0, 1, 1000, ZONE_WORLD, true, true
+    100, 100, 250, 250, 50, 70, 11, 0, 1, 1000, ZONE_WORLD, true, true
 );
 
 Hero Rogue (
     "Rogue", "Dexterity", 
     TILE_WIDTH * 3, TILE_HEIGHT * 3,
-    140, 140, 130, 130, 35, 44, 17, 0, 1, 1300, ZONE_WORLD, true, true
+    155, 155, 140, 140, 45, 55, 20, 0, 1, 1300, ZONE_WORLD, true, true
 );
 
 
@@ -1146,6 +1146,7 @@ void PlayerLevelUp()
     if(Player.GetExperience() >= levelCap)
     {
         playerLeveledUp = true;
+        HostileEntitiesLevelUp();
         
         for(int i = 0; i < MAX_LIGHT_MUSIC; i++)
         {
@@ -1153,8 +1154,6 @@ void PlayerLevelUp()
             SetMusicVolume(musicDark[i], 0.2f);
             SetMusicVolume(musicAction[i], 0.2f);
         }
-
-        HostileEntitiesLevelUp();
         PlaySound(sounds[SOUNDS_LEVEL_UP]);
     
     }
@@ -1171,7 +1170,7 @@ void HostileEntitiesLevelUp()
         orcArr[i]->SetDefense(orc.GetDefense() + 2);
         orcArr[i]->SetLevel(orc.GetLevel() + 1);
         orcArr[i]->SetExperience(orc.GetExperience() + 35);
-        orcArr[i]->SetHealth(orc.GetMaxHealth());
+        orcArr[i]->SetHealth(orc.GetMaxHealth() + 60);
     }
 
     //wandering Eyes
@@ -1183,19 +1182,19 @@ void HostileEntitiesLevelUp()
         eyeArr[i]->SetDefense(wanderingEye.GetDefense() + 1);
         eyeArr[i]->SetLevel(wanderingEye.GetLevel() + 1);
         eyeArr[i]->SetExperience(wanderingEye.GetExperience() + 40);
-        eyeArr[i]->SetHealth(wanderingEye.GetMaxHealth());
+        eyeArr[i]->SetHealth(wanderingEye.GetMaxHealth() + 50);
     }
 
     //Treants
     for(int i = 0; i < MAX_TREANT_INSTANCES;i++)
     {
         treantArr[i]->SetMaxHealth(treant.GetMaxHealth() + 80);
-        treantArr[i]->SetDamageMin(treant.GetDamageMin() + 5);
+        treantArr[i]->SetDamageMin(treant.GetDamageMin() + 8);
         treantArr[i]->SetDamageMax(treant.GetDamageMax() + 5);
         treantArr[i]->SetDefense(treant.GetDefense() + 3);
         treantArr[i]->SetLevel(treant.GetLevel() + 1);
         treantArr[i]->SetExperience(treant.GetExperience() + 35);
-        treantArr[i]->SetHealth(treant.GetMaxHealth());
+        treantArr[i]->SetHealth(treant.GetMaxHealth() + 80);
     }
 
     //Vengeful Spirits
@@ -1207,7 +1206,7 @@ void HostileEntitiesLevelUp()
         vengefulSpiritArr[i]->SetDefense(vengefulSpirit.GetDefense() + 1);
         vengefulSpiritArr[i]->SetLevel(vengefulSpirit.GetLevel() + 1);
         vengefulSpiritArr[i]->SetExperience(vengefulSpirit.GetExperience() + 40);
-        vengefulSpiritArr[i]->SetHealth(vengefulSpirit.GetMaxHealth());
+        vengefulSpiritArr[i]->SetHealth(vengefulSpirit.GetMaxHealth() + 50);
     }
 
     //Golems
@@ -1219,32 +1218,77 @@ void HostileEntitiesLevelUp()
         golemArr[i]->SetDefense(golem.GetDefense() + 5);
         golemArr[i]->SetLevel(golem.GetLevel() + 1);
         golemArr[i]->SetExperience(golem.GetExperience() + 35);
-        golemArr[i]->SetHealth(golem.GetMaxHealth());
+        golemArr[i]->SetHealth(golem.GetMaxHealth() + 100);
     }
 
     //snakes
     for(int i = 0; i < MAX_SNAKE_INSTANCES;i++)
     {
-        snakeArr[i]->SetMaxHealth(orc.GetMaxHealth() + 60);
-        snakeArr[i]->SetDamageMin(orc.GetDamageMin() + 8);
-        snakeArr[i]->SetDamageMax(orc.GetDamageMax() + 10);
-        snakeArr[i]->SetDefense(orc.GetDefense() + 2);
-        snakeArr[i]->SetLevel(orc.GetLevel() + 1);
-        snakeArr[i]->SetExperience(orc.GetExperience() + 35);
-        snakeArr[i]->SetHealth(orc.GetMaxHealth());
+        snakeArr[i]->SetMaxHealth(snake.GetMaxHealth() + 60);
+        snakeArr[i]->SetDamageMin(snake.GetDamageMin() + 8);
+        snakeArr[i]->SetDamageMax(snake.GetDamageMax() + 10);
+        snakeArr[i]->SetDefense(snake.GetDefense() + 2);
+        snakeArr[i]->SetLevel(snake.GetLevel() + 1);
+        snakeArr[i]->SetExperience(snake.GetExperience() + 35);
+        snakeArr[i]->SetHealth(snake.GetMaxHealth() + 60);
     }
 
     //rats
     for(int i = 0; i < MAX_RAT_INSTANCES;i++)
     {
-        ratArr[i]->SetMaxHealth(orc.GetMaxHealth() + 60);
-        ratArr[i]->SetDamageMin(orc.GetDamageMin() + 8);
-        ratArr[i]->SetDamageMax(orc.GetDamageMax() + 10);
-        ratArr[i]->SetDefense(orc.GetDefense() + 2);
-        ratArr[i]->SetLevel(orc.GetLevel() + 1);
-        ratArr[i]->SetExperience(orc.GetExperience() + 35);
-        ratArr[i]->SetHealth(orc.GetMaxHealth());
+        ratArr[i]->SetMaxHealth(rat.GetMaxHealth() + 60);
+        ratArr[i]->SetDamageMin(rat.GetDamageMin() + 8);
+        ratArr[i]->SetDamageMax(rat.GetDamageMax() + 10);
+        ratArr[i]->SetDefense(rat.GetDefense() + 2);
+        ratArr[i]->SetLevel(rat.GetLevel() + 1);
+        ratArr[i]->SetExperience(rat.GetExperience() + 35);
+        ratArr[i]->SetHealth(rat.GetMaxHealth() + 60);
     }
+
+    for(int i = 0; i < MAX_DOG_INSTANCES;i++)
+    {
+        dogArr[i]->SetMaxHealth(dog.GetMaxHealth() + 60);
+        dogArr[i]->SetDamageMin(dog.GetDamageMin() + 8);
+        dogArr[i]->SetDamageMax(dog.GetDamageMax() + 10);
+        dogArr[i]->SetDefense(dog.GetDefense() + 2);
+        dogArr[i]->SetLevel(dog.GetLevel() + 1);
+        dogArr[i]->SetExperience(dog.GetExperience() + 35);
+        dogArr[i]->SetHealth(dog.GetMaxHealth() + 60);
+    }
+
+    for(int i = 0; i < MAX_SLIME_INSTANCES;i++)
+    {
+        slimeArr[i]->SetMaxHealth(slime.GetMaxHealth() + 60);
+        slimeArr[i]->SetDamageMin(slime.GetDamageMin() + 8);
+        slimeArr[i]->SetDamageMax(slime.GetDamageMax() + 10);
+        slimeArr[i]->SetDefense(slime.GetDefense() + 2);
+        slimeArr[i]->SetLevel(slime.GetLevel() + 1);
+        slimeArr[i]->SetExperience(slime.GetExperience() + 35);
+        slimeArr[i]->SetHealth(slime.GetMaxHealth() + 60);
+    }
+
+    for(int i = 0; i < MAX_FLOATING_CRAB_INSTANCES;i++)
+    {
+        floatingCrabArr[i]->SetMaxHealth(floatingCrab.GetMaxHealth() + 60);
+        floatingCrabArr[i]->SetDamageMin(floatingCrab.GetDamageMin() + 8);
+        floatingCrabArr[i]->SetDamageMax(floatingCrab.GetDamageMax() + 10);
+        floatingCrabArr[i]->SetDefense(floatingCrab.GetDefense() + 2);
+        floatingCrabArr[i]->SetLevel(floatingCrab.GetLevel() + 1);
+        floatingCrabArr[i]->SetExperience(floatingCrab.GetExperience() + 35);
+        floatingCrabArr[i]->SetHealth(floatingCrab.GetMaxHealth() + 60);
+    }
+
+    for(int i = 0; i < MAX_WATER_SLIME_INSTANCES;i++)
+    {
+        waterSlimeArr[i]->SetMaxHealth(waterSlime.GetMaxHealth() + 60);
+        waterSlimeArr[i]->SetDamageMin(waterSlime.GetDamageMin() + 8);
+        waterSlimeArr[i]->SetDamageMax(waterSlime.GetDamageMax() + 10);
+        waterSlimeArr[i]->SetDefense(waterSlime.GetDefense() + 2);
+        waterSlimeArr[i]->SetLevel(waterSlime.GetLevel() + 1);
+        waterSlimeArr[i]->SetExperience(waterSlime.GetExperience() + 35);
+        waterSlimeArr[i]->SetHealth(waterSlime.GetMaxHealth() + 60);
+    }
+
 
     //The Crab
     for(int i = 0; i < MAX_CRAB_THING_INSTANCES;i++)
@@ -1255,7 +1299,7 @@ void HostileEntitiesLevelUp()
         crabArr[i]->SetDefense(crabThing.GetDefense() + 3);
         crabArr[i]->SetLevel(crabThing.GetLevel() + 2);
         crabArr[i]->SetExperience(crabThing.GetExperience() + 85);
-        crabArr[i]->SetHealth(crabThing.GetMaxHealth());
+        crabArr[i]->SetHealth(crabThing.GetMaxHealth() + 70);
     }
 }
 

@@ -914,17 +914,17 @@ void Tutorial()
       case 1:
       {
          DrawTextureEx(pagePictures[PAGE1], {image1Rec.x, image1Rec.y + 1}, 0.0f, 0.36f, WHITE);
-         DrawText("Choose your hero: \n\nKnight, Wizard, or \n\nRogue \n\neach with unique \n\nstrengths, weaknesses, \n\nand special skills.", textBox1.x + 5, textBox1.y + 15, 25, BLACK);
+         DrawText("Choose your hero: \n\nKnight, Wizard, or \n\nRogue \n\neach with unique \n\nstrengths, weaknesses, \n\nand special skills.", textBox1.x + 5, textBox1.y + 15, 18, BLACK);
         
          DrawTextureEx(pagePictures[PAGE2], {image2Rec.x + 34, image2Rec.y}, 0.0f, 0.36f, WHITE);
-         DrawText("Use WASD or the \n\narrow keys to move \n\nyour character.", textBox2.x + 5, textBox2.y + 15, 25, BLACK);
-         DrawText("Scroll the mouse wheel \n\nto zoom the camera \n\nin and out.", textBox2.x + 5, textBox2.y + 100, 25, BLACK);
+         DrawText("Use WASD or the \n\narrow keys to move \n\nyour character.", textBox2.x + 5, textBox2.y + 15, 18, BLACK);
+         DrawText("Scroll the mouse wheel \n\nto zoom the camera \n\nin and out.", textBox2.x + 5, textBox2.y + 110, 18, BLACK);
          break;
       }
       case 2:
       {
-         DrawTextureEx(pagePictures[PAGE3], {image1Rec.x + 25, image1Rec.y}, 0.0f, 0.36f, WHITE);
-         DrawText("Press R to chop down \n\na tree tile directly in \n\nfront of you \n\n(based on last movement \n\ndirection).\n\nCleared tiles turn into \n\ngrass, opening new \n\npaths. ", textBox1.x + 5, textBox1.y + 15, 20, BLACK);
+         DrawTextureEx(pagePictures[PAGE3], {image1Rec.x + 18, image1Rec.y}, 0.0f, 0.36f, WHITE);
+         DrawText("Press R to chop down \n\na tree tile directly in \n\nfront of you \n\n(based on last movement \n\ndirection).\n\nCleared tiles turn into \n\ngrass, opening new \n\npaths. ", textBox1.x + 5, textBox1.y + 15, 15, BLACK);
         
          DrawTextureEx(pagePictures[PAGE4], {image2Rec.x + 27, image2Rec.y}, 0.0f, 0.32f, WHITE);
          DrawText("Press Q to open your \n\ninventory screen at \n\nany time ", textBox2.x + 5, textBox2.y + 15, 25, BLACK);
@@ -934,38 +934,38 @@ void Tutorial()
       case 3:
       {
          DrawTextureEx(pagePictures[PAGE5], {image1Rec.x + 3, image1Rec.y + 15}, 0.0f, 0.51f, WHITE);
-         DrawText("Health Potions restore \n\nHP.\n\nFood items restore \n\nEnergy.\n\nBoth drop from chests \n\nyou find after defeating \n\nenemies.", textBox1.x + 5, textBox1.y + 15, 25, BLACK);
+         DrawText("Health Potions restore HP.\n\nFood items restore \n\nEnergy.\n\nBoth drop from chests \n\nyou find after defeating \n\nenemies.", textBox1.x + 5, textBox1.y + 15, 18, BLACK);
         
          DrawTextureEx(pagePictures[PAGE6], {image2Rec.x + 40, image2Rec.y}, 0.0f, 0.44f, WHITE);
-         DrawText("On the right side of the \n\ninventory you'll see your \n\ncharacter's Stats.", textBox2.x + 5, textBox2.y + 15, 25, BLACK);
-         DrawText("Stats increase \n\nautomatically when \n\nyou level up.", textBox2.x + 5, textBox2.y + 110, 25, BLACK);
+         DrawText("On the right side of the \n\ninventory you'll see your \n\ncharacter's Stats.", textBox2.x + 5, textBox2.y + 15, 20, BLACK);
+         DrawText("Stats increase \n\nautomatically when \n\nyou level up.", textBox2.x + 5, textBox2.y + 115, 18, BLACK);
          
          break;
       }
       case 4:
       {
          DrawTextureEx(pagePictures[PAGE7], {image1Rec.x, image1Rec.y + 20}, 0.0f, 0.84f, WHITE);
-         DrawText("In the top-left corner \n\nof your screen, the \n\nHotbar displays:\n\nCurrent coordinates\n\nHealth and\n\nMoney (gold)", textBox1.x + 5, textBox1.y + 15, 25, BLACK);
+         DrawText("In the top-left corner \n\nof your screen, the \n\nHotbar displays:\n\nCurrent coordinates\n\nHealth and\n\nMoney (gold)", textBox1.x + 5, textBox1.y + 15, 23, BLACK);
         
          DrawTextureEx(pagePictures[PAGE8], {image2Rec.x + 15, image2Rec.y}, 0.0f, 0.36f, WHITE);
-         DrawText("Enemies roam the map.\n\nIf you get too close, \n\nthey'll aggro, chase you, \n\nand trigger a battle \n\nwhen they reach you.", textBox2.x + 5, textBox2.y + 15, 25, BLACK);
+         DrawText("Enemies roam the map.\n\nIf you get too close, \n\nthey'll aggro, chase you, \n\nand trigger a battle \n\nwhen they reach you.", textBox2.x + 5, textBox2.y + 15, 23, BLACK);
          
          break;
       }
       case 5:
       {
          DrawTextureEx(pagePictures[PAGE9], {image1Rec.x, image1Rec.y}, 0.0f, 0.38f, WHITE);
-         DrawText("Turn-based, one action \nper turn. Your options:\n\nBasic Attack / Defend \n(no energy cost)\n\nSkill (costs Energy; each \nskill has its own damage\nand effect)\n\nInventory (using a \nconsumable or equipping an \nitem will costs your turn)\n\nRun (attempt to flee; \nsuccess isn't guaranteed)", textBox1.x + 5, textBox1.y + 5, 20, BLACK);
+         DrawText("Turn-based, one action \nper turn. Your options:\n\nBasic Attack / Defend \n(no energy cost)\n\nSkill (costs Energy; each \nskill has its own damage\nand effect)\n\nInventory (using a \nconsumable or equipping an \nitem will costs your turn)\n\nRun (attempt to flee; \nsuccess isn't guaranteed)", textBox1.x + 5, textBox1.y + 5, 15, BLACK);
         
          DrawTextureEx(pagePictures[PAGE10], {image2Rec.x + 15, image2Rec.y}, 0.0f, 0.54f, WHITE);
-         DrawText("Defeated foes grant \n\nExperience and drop a \n\nChest. Open chests to \n\nfind gold, potions, food, \n\nor rare loot.", textBox2.x + 5, textBox2.y + 15, 25, BLACK);
+         DrawText("Defeated foes grant \n\nExperience and drop a \n\nChest. Open chests to \n\nfind gold, potions, food, \n\nor rare loot.", textBox2.x + 5, textBox2.y + 15, 18, BLACK);
          
          break;
       }
       case 6:
       {
          DrawTextureEx(pagePictures[PAGE11], {image1Rec.x + 15, image1Rec.y}, 0.0f, 0.64f, WHITE);
-         DrawText("Approach a gate or \n\nportal and press E \n\nto enter a new \n\narea or dungeon.", textBox1.x + 5, textBox1.y + 15, 25, BLACK);
+         DrawText("Approach a gate or \n\nportal and press E \n\nto enter a new \n\narea or dungeon.", textBox1.x + 5, textBox1.y + 15, 18, BLACK);
         
          DrawText("That's about it, \n\n\nenjoy the game!", textBox2.x + 5, textBox2.y + 15, 30, BLACK);
          
