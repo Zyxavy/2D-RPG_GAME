@@ -37,7 +37,7 @@ There are two ways to run the game:
 
 1.  Clone the repository to your local machine:
     ```sh
-    git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
+    git clone https://github.com/Zyxavy/2D-RPG_GAME.git
     ```
 2.  Open the project folder in Visual Studio Code.
 3.  Ensure your VS Code tasks (`tasks.json`) are configured to compile and link against the Raylib library files.
