@@ -3,7 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "C:/raylib/raylib/src/**",
+                "D:/Windows10/Raylib/raylib-master/src/**", 
                 "${workspaceFolder}/**"
             ],
             "defines": [
@@ -13,7 +13,7 @@
                 "GRAPHICS_API_OPENGL_33",
                 "PLATFORM_DESKTOP"
             ],
-            "compilerPath": "C:/raylib/w64devkit/bin/gcc.exe",
+            "compilerPath": "D:/Windows10/MinGW/bin/gcc.exe",
             "cStandard": "c99",
             "cppStandard": "c++14",
             "intelliSenseMode": "gcc-x64",
